@@ -1,0 +1,17 @@
+! This is a trial control file for computing uniform flow hydraulics
+! based on a tree drag model.
+
+! Define the channel properties
+Channel Width == 35.54 !metres
+Channel Length == 1000 !metres
+Channel Slopes (km) == channel_slopes.csv ! file that lists the channel slopes as 1m drop per x km
+Channel Sidewalls == False
+Channel Mannings n == 0.045
+
+! Define the forest
+Tree DB == Tree_db_2009_0p6.csv
+
+! Define flow conditions (water depth list)
+Set depths == absolute
+Flow depths == Flow_depths.csv
+Blockage == None
